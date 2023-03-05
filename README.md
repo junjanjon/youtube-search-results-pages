@@ -4,8 +4,8 @@ YouTube 検索結果を csv ファイルに保存する。
 
 # 使い方
 
-https://console.cloud.google.com/ で API キーを取得します。
-環境変数 `YOUTUBE_API_KEY` に API キーを設定します。
+https://console.cloud.google.com/ で API キーを取得します。  
+環境変数 `YOUTUBE_API_KEY` に API キーを設定します。  
 `npm start {検索条件}` で実行できます。検索結果は `./result.csv` に保存されます。
 
 ```bash
@@ -28,7 +28,7 @@ console.log(content);
 
 ## クォータの使用量
 
-API キーのクォータの使用量は、[Google API Console](https://console.cloud.google.com/apis/dashboard?hl=ja) で確認できます。
+API キーのクォータの使用量は、[Google API Console](https://console.cloud.google.com/apis/dashboard?hl=ja) で確認できます。  
 クォータを超過すると 403 エラーが返ってきます。
 
 1日ごとにクォータがリセットされます。
