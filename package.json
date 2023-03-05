@@ -1,0 +1,23 @@
+{
+  "name": "youtube-search-results-pages",
+  "version": "1.0.0",
+  "description": "CI で YouTube 検索結果を保存する",
+  "main": "main.ts",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junjanjon/youtube-search-results-pages.git"
+  },
+  "author": "Junki Hiroi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/junjanjon/youtube-search-results-pages/issues"
+  },
+  "homepage": "https://github.com/junjanjon/youtube-search-results-pages#readme",
+  "dependencies": {
+    "typescript": "^4.9.5"
+  }
+}
