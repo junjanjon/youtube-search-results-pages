@@ -18,7 +18,7 @@ npm start 'part=snippet&channelId=UC5CTV3JSdrlo5Pa42QkK8SA&order=date&type=video
 
 ## チャンネルIDの調べ方
 
-チャンネルIDを知りたい場合は、チャンネルページのブラウザの開発者ツールで以下のコンソールを実行すると取得できます。
+チャンネルIDを知りたい場合は、チャンネルページでブラウザの開発者ツールを開き以下のコンソールを実行すると取得できます。
 
 ```js
 const element = document.querySelector(`[itemprop="channelId"]`);
@@ -28,10 +28,13 @@ console.log(content);
 
 ## クォータの使用量
 
-API キーのクォータの使用量は、[Google API Console](https://console.cloud.google.com/apis/dashboard?hl=ja) で確認できます。  
-クォータを超過すると 403 エラーが返ってきます。
+YouTube Data API にはクォータがあり、クォータを超過すると 403 エラーが返ってきます。
 
-1日ごとにクォータがリセットされます。
+https://developers.google.com/youtube/v3/getting-started?hl=ja#quota
+
+API キーのクォータの使用量は、[Google API Console](https://console.cloud.google.com/apis/dashboard?hl=ja) で確認できます。  
+
+1日ごとにクォータはリセットされます。
 
 # 開発
 
