@@ -2,7 +2,7 @@ import { writeFileSync } from 'fs'
 const YOUTUBE_SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search'
 const YOUTUBE_WATCH_URL = 'https://www.youtube.com/watch?v='
 const FILE_NAME = 'result.csv'
-const WAIT_TIME = 5000
+const WAIT_TIME = 10000
 console.debug = function () {}
 
 if (process.env.YOUTUBE_API_KEY === undefined) {
