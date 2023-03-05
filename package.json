@@ -4,7 +4,9 @@
   "description": "CI で YouTube 検索結果を保存する",
   "main": "main.ts",
   "scripts": {
-    "start": "node main.js",
+    "start": "tsc && node dist/main.js",
+    "lint": "eslint src/**/*",
+    "lint:fix": "eslint src/**/* --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +19,14 @@
     "url": "https://github.com/junjanjon/youtube-search-results-pages/issues"
   },
   "homepage": "https://github.com/junjanjon/youtube-search-results-pages#readme",
-  "dependencies": {
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "eslint": "^8.35.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
     "typescript": "^4.9.5"
   }
 }
